@@ -131,6 +131,8 @@ class Tablero(spyral.Sprite):
         self.mostrar(self.palabra, self.acertadas)
         self.scene.l.reset()
         self.scene.v.reset()
+        spyral.event.register("input.keyboard.down.*", self.procesar_tecla)
+
 
     def set_text(self, text):
         self.image = self.font.render(text)
@@ -169,6 +171,8 @@ class Tablero(spyral.Sprite):
         self.mostrar(self.palabra, self.acertadas)
 
         if self.check_completos():
+            spyral.event.unregister("input.keyboard.down.*",
+                                            self.procesar_tecla)
             self.scene.l.stop_all_animations()
             self.scene.l.stop_all_animations()  # spyral, please?
             tiempo = self.scene.j.set_caminar(self.scene.l.x - 20, True)

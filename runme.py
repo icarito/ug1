@@ -21,8 +21,8 @@ def obtener_palabra():
     for linea in tabla:
         uid = linea["id"]
         palabra_png = os.path.join(topic_dir, "Imagenes", uid + '.png')
-        if os.path.exists(palabra_png):
-            lista.append(linea)
+        #if os.path.exists(palabra_png):
+        lista.append(linea)
 
     indice = random.randint(0, len(lista) - 1)
 
@@ -303,8 +303,12 @@ class Visualizador(spyral.Sprite):
                                 anchor="midleft")
 
     def render_image(self, image):
-        nueva = spyral.Image(filename=image).scale((self.width - self.margen,
-                                            self.height - self.margen))
+        try:
+            nueva = spyral.Image(filename=image).scale((self.width - self.margen,
+                                                self.height - self.margen))
+        except pygame.error:
+            nueva = spyral.Image(size=(self.width - self.margen, 
+                                        self.height - self.margen)).fill((255, 255, 255))
         return nueva
 
     def render_text(self, text):

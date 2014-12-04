@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="2" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="22" height="2" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="generic_background" tilewidth="32" tileheight="32">
   <image source="../../sunset-adventure/game/data/map/tiles/generic_background.png" width="864" height="832"/>
  </tileset>
- <layer name="Capa de Patrones 1" width="15" height="2">
+ <tileset firstgid="703" name="small_objects" tilewidth="32" tileheight="32">
+  <image source="../../sunset-adventure/game/data/map/tiles/small_objects.png" width="671" height="512"/>
+ </tileset>
+ <layer name="Capa de Patrones 1" width="22" height="2">
   <data encoding="base64" compression="zlib">
-   eJyLZWRgiCMRxwMxCEQzkodBAACTsgo7
+   eJybwsjAMAUJxwJxHIk4HojRQRRQLBoJ/4HiaBIxSM9fKI4BYgAewhKW
+  </data>
+ </layer>
+ <layer name="Capa de patrones 2" width="22" height="2">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF8cwMZINePHqLKTB3IVDvHKh+AKP5Aqw=
   </data>
  </layer>
 </map>

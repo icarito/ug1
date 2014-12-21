@@ -8,12 +8,17 @@
  </tileset>
  <layer name="Capa de Patrones 1" width="22" height="2">
   <data encoding="base64" compression="zlib">
-   eJybwsjAMAUJxwJxHIk4HojRQRRQLBoJ/4HiaBIxSM9fKI4BYgAewhKW
+   eJybwsjAMAUJxwJxHIk4HojRQRRQLJrKOAaIAa/vD28=
+  </data>
+ </layer>
+ <layer name="Capa de patrones 3" width="22" height="2">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA+2MyMyi8B8o8B8SIgXgzEdczY9SGDKmaEXhg4DmQDACfIBYE=
   </data>
  </layer>
  <layer name="Capa de patrones 2" width="22" height="2">
   <data encoding="base64" compression="zlib">
-   eJxjYEAF8cwMZINePHqLKTB3IVDvHKh+AKP5Aqw=
+   eJxjYEAF8cwMZINePHqLoXI1ZJi/EKhnDlQfAMO2Ays=
   </data>
  </layer>
 </map>
